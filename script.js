@@ -20,15 +20,15 @@
         card.innerHTML = `
           <img src="${car.imageUrl2 || 'https://via.placeholder.com/220x140'}" alt="">
           <div class="card-body">
-            <h5>Модель: ${car.model}</h5>
-               <h5>Цена в день: $${car.dailyPrice}</h5>
-            <h5>Мест: ${car.seats}</h5>
-            <h5>Цвет: ${car.color}</h5>
+            <h5>Model: ${car.model}</h5>
+               <h5>Price: $${car.dailyPrice}</h5>
+            <h5>seats: ${car.seats}</h5>
+            <h5>color: ${car.color}</h5>
           </div>
           <button onclick="removeCar(this)">delete</button>
         `;
  
-        
+
         carsArea.appendChild(card);
 
       });
